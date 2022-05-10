@@ -16,7 +16,7 @@ public class Coin : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other) //other:Õ“Ë‚µ‚Ä‚«‚½‘Šè‚Ìî•ñ
+    private void OnTriggerEnter(Collider other) //other:ï¿½Õ“Ë‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½
     {
         if (other.gameObject.tag == ("Player"))
         {
