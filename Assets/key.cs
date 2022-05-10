@@ -5,9 +5,10 @@ using UnityEngine;
 public class key : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    public Rigidbody rigidbody;
+    private void Start()
     {
-        
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
