@@ -17,13 +17,13 @@ public class bumper : MonoBehaviour
     }
 
     public float power = 20;
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         Rigidbody r = other.GetComponent<Rigidbody>();
         if (r != null)
         {
             //当たった時の位置から逆方向割り出して、プレイヤーをはじく
-            Vector3 angle = (other.transform.position - r.transform.position).normalized;   //angle:方向ベクトルなので正規化してる
+            Vector3 angle = (other.transform.position - transform.position).normalized;   //angle:方向ベクトルなので正規化してる
             r.velocity = angle * power;  
         }
     }
