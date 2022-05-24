@@ -16,9 +16,16 @@ public class Goal : MonoBehaviour
         
     }
 
-    //‰½‚©d‚È‚Á‚½‚É©“®Às‚³‚ê‚éƒƒ\ƒbƒh
-    private void OnTriggerEnter(Collider other) //other:Õ“Ë‚µ‚Ä‚«‚½‘Šè‚Ìî•ñ
+    public GameObject clearText;
+    public GameObject nextButton;
+    public AudioSource audioSource;
+
+    private void OnTriggerEnter(Collider other) //other:ãªã«ã‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
     {
-        Debug.Log("ƒS[ƒ‹I");
+        Debug.Log("ã‚´ãƒ¼ãƒ«ï¼");
+
+        clearText.SetActive(true);
+        nextButton.SetActive(true);
+        audioSource.Play();
     }
 }
