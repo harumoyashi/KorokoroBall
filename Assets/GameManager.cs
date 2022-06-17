@@ -28,10 +28,12 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(activeSceneName);
     }
 
+    SceneController sceneController;
     //次のシーンに切り替え
     public void ChangeScene(string nextScene)
     {
         SceneManager.LoadScene(nextScene);
+        sceneController.Fade();
     }
 
     //コイン取得数カウント

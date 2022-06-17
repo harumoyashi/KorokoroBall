@@ -27,6 +27,5 @@ public class Coin : MonoBehaviour
             gameManager.AddCoinCount(); //コインの取得数カウント
             Destroy(gameObject);
         }
-
     }
 }

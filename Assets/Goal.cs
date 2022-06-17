@@ -19,6 +19,7 @@ public class Goal : MonoBehaviour
     public GameObject clearText;
     public GameObject nextButton;
     public AudioSource audioSource;
+    public ParticleSystem particle;
 
     private void OnTriggerEnter(Collider other) //other:なにかオブジェクト
     {
@@ -26,6 +27,7 @@ public class Goal : MonoBehaviour
 
         clearText.SetActive(true);
         nextButton.SetActive(true);
+        particle.Play();
         audioSource.Play();
     }
 }
